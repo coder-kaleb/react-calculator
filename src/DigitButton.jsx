@@ -1,6 +1,6 @@
 import { ACTION } from "./App";
 
-const DigitButton = ({ dispatch, digit }) => {
+const DigitButton = ({ digit, dispatch }) => {
   return (
     <button
       onClick={() => dispatch({ type: ACTION.ADD_DIGIT, payload: { digit } })}
